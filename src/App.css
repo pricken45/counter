@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  user-select: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Button {
+  animation: shrink 120ms linear;
+  width: 3vw;
+  height: 3vh;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a1c1f;
+  color: white;
+}
+
+@keyframes grow {
+  from{
+    width: 3vw;
+    height: 3vh;
+  } 
+  to {
+    width: 4vw;
+    height: 4vh;
+  }
+}
+
+@keyframes shrink {
+  from{
+    width: 4vw;
+    height:4vh;
+  } 
+  to {
+    width: 3vw;
+    height: 3vh;
+  }
+}
+
+.Button:hover {
+  cursor: pointer;
+  animation: grow 100ms linear;
+  width: 4vw;
+  height: 4vh;
+}
